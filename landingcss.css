@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+  color: whitesmoke;
+}
+a {
+  color: black;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+}
+.nav {
+  font-size: larger;
+  color: whitesmoke;
+  height: 15vh;
+  background-color: rgb(175, 192, 210);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon a img {
+  width: 200px;
+}
+.menu {
+  /* border: 2px solid blue; */
+  width: 60vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu a {
+  text-decoration: none;
+
+}
+.menu a:hover {
+  text-decoration: underline;
+  color: rgb(255, 0, 0);
+  font-weight: bolder;
+}
+/* .links{
+  border: 1px solid black;
+  margin-left: 10px;
+} */
+.links a img {
+  width: 20px;
+  margin-right: 10px;
+  padding-top: 10px;
+}
+
+.mainpage {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(4, 100vh);
+  grid-template-areas:
+    "men men men men men"
+    "women women women women women"
+    "kids kids kids kids kids"
+    "new new new new new";
+}
+
+.semi-transparent-button {
+  font-size: larger;
+  font-family:"Montserrat", sans-serif; ;
+  padding: 10px 20px;
+  width: 300px;
+  height: 70px;
+  background: rgba(188, 162, 162, 0.5);
+  border: 2px solid black;
+  color: whitesmoke;
+  text-align: center;
+  letter-spacing: 5px;
+  transition: .5s;
+}
+.semi-transparent-button:hover{
+  color: black;
+  background-color: aliceblue;
+
+}
+.info {
+  
+  width: 50%;
+}
+
+#box1 {
+  grid-area: men;
+  background-color: blanchedalmond;
+  background: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 255, 209, 0) 100%
+    ),
+    url(https://www.junaidjamshed.com/media/weltpixel/owlcarouselslider/images/m/e/men_13.jpg)
+      center center/cover no-repeat;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+#box2 {
+  background-color: yellow;
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 255, 255, 0) 100%
+    ),
+    url(https://static-01.daraz.pk/p/mdc/bfa64dd14f5ce52e7b58b12eaea6be58.jpg)
+      center top/cover no-repeat;
+  grid-area: women;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+#box3 {
+  background-color: deeppink;
+  grid-area: kids;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 255, 209, 0) 100%
+    ),
+    url(https://e1.pxfuel.com/desktop-wallpaper/760/61/desktop-wallpaper-kids-fashion-baby-clothes.jpg)
+      center center/cover no-repeat;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+/* New collection */
+#box4 {
+  background-color: deepskyblue;
+  grid-area: new;
+  display: grid;
+  grid-template-columns: repeat(3,33vw);
+  grid-template-rows: repeat(3,30vh);
+  grid-gap: 1%;
+}
+
+
+.pic1{
+  background: url(https://cdn-skin.sanaullastore.com/media/catalog/product/g/u/gul-ahmed-summer-premium-collection-2023-sp-32001-_1_.jpg) top center/cover no-repeat  ;
+
+  grid-row: span 2;
+  grid-column: span 1;
+}
+
+
+.pic2{
+  background: url(https://www.gulahmedshop.com/media/catalog/product/g/l/gls-21-80_kids_2_.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=&width=) center center/cover no-repeat ;
+  grid-row: span 1;
+  grid-column: span 1;
+}
+.pic3{
+  background: url(https://cdn.shopify.com/s/files/1/0608/8094/5385/products/dftyujhgfdefrgthjksx_2_400x.webp?v=1649587297)  top center/cover no-repeat  ;
+  grid-row: span 2;
+  grid-column: span 1;
+}
+.pic4{
+  background: url(https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/01_unstitched/2022/mobile/12_13/02_latha.jpg)  top center/cover no-repeat  ;
+  grid-row: span 2;
+  grid-column: span 1;
+}
+.pic5{
+  background: url(https://www.gulahmedshop.com/media/catalog/product/d/a/dark_blue_basic_jeans_tr-jnsp22-004_1_.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=&width=)  top center/cover no-repeat  ;
+  grid-row: span 2;
+  grid-column: span 1;
+}
+.pic6{
+  background: url(https://www.gulahmedshop.com/media/catalog/product/r/e/red_basic_kids_kurta_kr-kpln22-008_1_.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=&width=)  center center/cover no-repeat  ;
+  grid-row: span 2;
+  grid-column: span 1;
+}
+
+
+
+
+
+#footer {
+  background-color: rgba(0, 0, 0, 0.827);
+  height: 100px;
+}
+#footer p {
+  float: left;
+}
+#footer img {
+  float: right;
+  width: 100px;
+  filter: invert(1);
+}
+ 
+#footer a img{
+  width: 30px;
+  margin: 5px;
+}
+
+
+/* MEDIA */
+@media screen and (max-width: 800px) {
+  .nav {
+    font-size: small;
+    height: 35vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .icon a img {
+    width: 100px;
+  }
+  .menu {
+    width: 100vw;
+  }
+
+  .info {
+  
+    width: 100%;
+  }
+ 
+
+
+  #footer {
+    background-color: rgba(0, 0, 0, 0.827);
+    height: 100px;
+  }
+  #footer p {
+    float: left;
+    font-size: smaller;
+    width: 250px;
+  }
+  #footer img {
+    float: right;
+    width: 50px;
+    filter: invert(1);
+  }
+
+
+}
+
+

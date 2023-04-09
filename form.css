@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+  color: whitesmoke;
+}
+a {
+  color: black;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+}
+.nav {
+  font-size: larger;
+  color: whitesmoke;
+  height: 15vh;
+  background-color: rgb(175, 192, 210);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon a img {
+  width: 200px;
+}
+.menu {
+  /* border: 2px solid blue; */
+  width: 60vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu a {
+  text-decoration: none;
+
+}
+.menu a:hover {
+  text-decoration: underline;
+  color: rgb(255, 0, 0);
+  font-weight: bolder;
+}
+/* .links{
+  border: 1px solid black;
+  margin-left: 10px;
+} */
+.links a img {
+  width: 20px;
+  margin-right: 10px;
+  padding-top: 10px;
+}
+
+
+.info {
+  
+  width: 50%;
+}
+
+
+.check{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: coral;
+    height: 90vh;
+}
+
+form{
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+ 
+form div{
+    margin: 20px;
+    display: flex;
+    width: 90vw;
+    height: 20vh;
+}
+
+form div input, form div textarea{
+    height: 5vh;
+    width: 20vw;
+    margin-right: 1%;
+    border: 2px solid black;
+    background-color: whitesmoke;
+}
+
+.semi-transparent-button {
+    font-size: larger;
+    font-family:"Montserrat", sans-serif; ;
+    padding: 10px 20px;
+    width: 20%;
+    height: 15%;
+    background: rgba(188, 162, 162, 0.5);
+    border: 2px solid black;
+    color: whitesmoke;
+    text-align: center;
+    letter-spacing: 5px;
+    transition: .5s;
+  }
+  .semi-transparent-button:hover{
+    color: black;
+    background-color: aliceblue;
+  
+  }
+
+
+
+
+
+#footer {
+    background-color: rgba(0, 0, 0, 0.827);
+    height: 100px;
+  }
+  #footer p {
+    float: left;
+  }
+  #footer img {
+    float: right;
+    width: 100px;
+    filter: invert(1);
+  }
+   
+  #footer a img{
+    width: 30px;
+    margin: 5px;
+  }
+  
+  
+  /* MEDIA */
+  @media screen and (max-width: 800px) {
+    .nav {
+      font-size: small;
+      height: 35vh;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+  
+    .icon a img {
+      width: 100px;
+    }
+    .menu {
+      width: 100vw;
+    }
+  
+    .info {
+    
+      width: 100%;
+    }
+   
+  
+  
+    #footer {
+      background-color: rgba(0, 0, 0, 0.827);
+      height: 100px;
+    }
+    #footer p {
+      float: left;
+      font-size: smaller;
+      width: 250px;
+    }
+    #footer img {
+      float: right;
+      width: 50px;
+      filter: invert(1);
+    }
+  
+  
+  }
